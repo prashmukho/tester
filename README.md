@@ -169,6 +169,8 @@ First we create a victim object called peter for 'Peter Russo' using '#let'. We 
 
 The true power of doubles comes from their ability to take a method stub and return whatever we want for the purpose of using the return value in another method call. In the second 'it' block, the expectation raises an error whereas in the first it does not. This is because '@name' in 'Killer' class is shielded from outside view and so it cannot be used. No matter, we can just use a test double which will ignore the inner workings of the 'Killer' class and check to see if the test involving 'be_killed_by' passes with the dummy killer's (frank_the_assassin) name set to 'Frank Underwood' and returned by its copy of '#name'.
 
+Using test doubles encourages the integration of all the models by reducing coupling between tests and making them less brittle. They allow EVERY test to be run or written COMPLETELY in isolation without ANY dependencies - the Holy Grail of unit testing.
+
 
 
 
