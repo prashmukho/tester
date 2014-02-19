@@ -23,10 +23,10 @@ describe "commandments", :focus => true do
     end
 
     it "overcomes all odds" do
-      Goku = 1000000000
-      Vegeta = 999999999
-      # expect(Goku.be_greater_than(Vegeta)).to be_true
-      expect(Vegeta).to be_surpassed_by(Goku)
+      goku = 1000000000
+      vegeta = 999999999
+      # expect(vegeta.surpassed_by(goku)).to be_true --> alternative
+      expect(vegeta).to be_surpassed_by(goku)
     end
 
     class SentientBeing
@@ -144,10 +144,7 @@ describe "commandments", :focus => true do
   describe "check for state with conviction", :focus => true do
     subject(:test) { TestModel.new(1) }
 
-    ###### Implicit subject calls TestModel.new which assigns nil to @id ######
-
     # it { should be_initialized_with_id(nil) } #—> deprecated, what?!
-
     # it { is_expected.to be_initialized_with_id(nil) } #—> in Rspec 3, :(
 
     it "allows an object to maintain a predefined state" do
