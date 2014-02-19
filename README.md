@@ -60,7 +60,7 @@ it { is_expected.to be_initialized_with_id(nil) }
 
 ### Predicate Matchers
 
-1. The following example group will use the built in predicate matcher 'be_true':
+- The following example group will use the built in predicate matcher 'be_true':
 
 ```ruby
 describe "predicate magic" do  
@@ -73,7 +73,7 @@ end
 ```
 'be_true' is applied as '== true' and will let the test pass if 'this_condition' evaluates to 'true'
 
-2. The following example group will use a custom predicate matcher 'be_greater_than':
+- The following example group will use a custom predicate matcher 'be_greater_than':
 
 ```ruby
 describe "predicate magic" do  
@@ -89,7 +89,7 @@ end
 
 ### To Have and Have not
 
-1. The following example group will use the built in predicate matcher 'have':
+- The following example group will use the built in predicate matcher 'have':
 
 ```ruby
 describe "have whatever you like", :focus => true do
@@ -102,7 +102,7 @@ end
 ```
 '#characters' is not defined for String class but it works all the same. For primitive data types 'have' will have first check to see if the class object responds to '#characters' but if it doesn't it simply applies '#size' or '#length'. 
 
-2. This technique works with arrays and hashes as well:
+- This technique works with arrays and hashes as well:
 
 ```ruby
 describe "have whatever you like", :focus => true do
@@ -121,7 +121,7 @@ end
 ```
 Neither 'Array#things' nor 'Hash#key_value_pairs' is defined but the tests will pass because both arrays and hases respend to '#size'.
 
-3. This technique also works with objects we create:
+- This technique also works with objects we create:
 
 ```ruby
 describe "have whatever you like", :focus => true do
