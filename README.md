@@ -149,7 +149,7 @@ A test double is ANYTHING literally. Once created it can stand in for any object
 
 ```ruby
 describe "shady dealings with dopplegangers" do
-  # Peter Russon must die
+  # Peter Russo must die
   let(:peter) { Victim.new("Peter Russo") }
 
   it "does what needs doing" do

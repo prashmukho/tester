@@ -180,7 +180,7 @@ describe "commandments", :focus => true do
       end
     end
 
-    # Peter Russon must die
+    # Peter Russo must die
     let(:peter) { Victim.new("Peter Russo") }
 
     it "does what needs doing" do
