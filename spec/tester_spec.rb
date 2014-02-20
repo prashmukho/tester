@@ -1,6 +1,6 @@
 require_relative './spec_helper'
 
-describe "commandments", :focus => true do
+describe "commandments" do
   
   describe "predicate magic" do
     
@@ -93,7 +93,7 @@ describe "commandments", :focus => true do
     end
   end
 
-  describe "have whatever you like", :focus => true do
+  describe "have whatever you like" do
     it "allows a string to have a fixed number of characters" do
       this_string = "OOPs"
       # expect(this_string.length).to eq(4)
@@ -131,7 +131,7 @@ describe "commandments", :focus => true do
   class TestModel
     IDs = []
 
-    def initialize(id=nil)
+    def initialize(id = nil)
       @id = id
       IDs << id unless IDs.include?(id) || id.nil?
     end
@@ -141,7 +141,7 @@ describe "commandments", :focus => true do
     end
   end
 
-  describe "check for state with conviction", :focus => true do
+  describe "check for state with conviction" do
     subject(:test) { TestModel.new(1) }
 
     # it { should be_initialized_with_id(nil) } #—> deprecated, what?!
@@ -171,7 +171,7 @@ describe "commandments", :focus => true do
     end
 
     class Killer < Person
-      def initialize(name="unknown")
+      def initialize(name = "unknown")
         @name = name
       end
 
