@@ -37,7 +37,7 @@ class TestModel
   end
 end
 
-describe "check for state with conviction", :focus => true do
+describe "check for state with conviction" do
   subject(:test) { TestModel.new(1) }
 
   it "allows an object to maintain a predefined state" do
@@ -92,7 +92,7 @@ end
 - The following example group will use the built in predicate matcher 'have':
 
 ```ruby
-describe "have whatever you like", :focus => true do
+describe "have whatever you like" do
   it "allows a string to have a fixed number of characters" do
     this_string = "OOPs"
     # expect(this_string.length).to eq(4) --> alternative
@@ -105,7 +105,7 @@ end
 - This technique works with arrays and hashes as well:
 
 ```ruby
-describe "have whatever you like", :focus => true do
+describe "have whatever you like" do
   it "allows an array to have a fixed number of things" do
     this_array = [1,2,3]
     # expect(this_array.size).to eq(3) --> alternative
@@ -124,7 +124,7 @@ Neither 'Array#things' nor 'Hash#key_value_pairs' is defined but the tests will 
 - This technique also works with objects we create:
 
 ```ruby
-describe "have whatever you like", :focus => true do
+describe "have whatever you like" do
   class SoccerTeam
     attr_reader :players
 
